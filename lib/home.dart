@@ -57,7 +57,7 @@ class Home extends StatelessWidget {
                             Text(controller.weatherList[index].main!.temp.toString()+"°C",style: TextStyle(color: Colors.white,fontSize: 20),),
                             Text(controller.weatherList[index].weather![0].description.toString(),
                               style: TextStyle(color: Colors.white,fontSize: 20),),
-                            Text(DateFormat("hh:mm").format(DateTime.parse(controller.weatherList[index].dtTxt??"")),style: TextStyle(color: Colors.white,fontSize: 15)),
+                            Text(DateFormat("hh:mm a").format(DateTime.parse(controller.weatherList[index].dtTxt??"")),style: TextStyle(color: Colors.white,fontSize: 15)),
                             Text(DateFormat("EEEE").format(DateTime.parse(controller.weatherList[index].dtTxt??"")),style: TextStyle(color: Colors.white,fontSize: 15)),
                             Text(DateFormat("dd-MM-yyyy").format(DateTime.parse(controller.weatherList[index].dtTxt??"")),style: TextStyle(color: Colors.white,fontSize: 15)),
                           ],
